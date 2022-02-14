@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Alert } from './components/index';
 import './App.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
 
   return (
     <div className="App">
+      <Alert />
       <header className="App-header">
         <p>{ count }</p>
         <button

@@ -15,8 +15,8 @@ group:
 
 ```tsx
 import React from 'react';
-import { Alert } from '../../../dist/index.js';
-import '../../../dist/index.css';
+import { Alert } from 'hiller-design';
+import 'hiller-design/dist/index.css';
 
 const App = () => {
   return (

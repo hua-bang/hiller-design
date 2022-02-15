@@ -15,11 +15,18 @@ group:
 
 ```tsx
 import React from 'react';
-import { Alert } from '../../../src/components';
+import { Alert } from '../../../dist/index.js';
+import '../../../dist/index.css';
 
 const App = () => {
   return (
-    <Alert>Hiller Design</Alert>
+    <>
+      <Alert>Hiller Design</Alert>
+      <br />
+      <Alert kind="warning" style={{ color: "red" }}>
+        Hiller Design
+      </Alert>
+    </>
   );
 }
 

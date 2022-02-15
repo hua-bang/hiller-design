@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlertProps, KindMap, Kind } from './interface';
-import './style/index.scss';
+
 
 const prefixCls = 'hiller-alert';
 const defaultKind: Kind = 'info';
@@ -15,6 +15,7 @@ const kindsColorMap: KindMap = {
 
 const Alert: React.FC<AlertProps> = props => {
   const {
+    style = {},
     kind = defaultKind,
     children = defaultText,
     ...rest
@@ -24,7 +25,8 @@ const Alert: React.FC<AlertProps> = props => {
     <div
       className={prefixCls}
       style={{
-        background: kindsColorMap[kind as Kind]
+        background: kindsColorMap[kind as Kind],
+        ...style
       }}
       {...rest}
     >

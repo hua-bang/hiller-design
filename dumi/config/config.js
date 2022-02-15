@@ -25,6 +25,10 @@ export default defineConfig({
   chainWebpack(memo) {
     memo.plugins.delete('copy');
   },
-  sass: {}
+  sass: {},
+  alias: {
+    '@style': '/SRC/style',
+    '@components': '/src/components',
+  },
   // more config: https://d.umijs.org/config
 });

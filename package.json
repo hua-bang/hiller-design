@@ -4,9 +4,16 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "files": [ 
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
   "dependencies": {
-    "@commitlint/cli": "^16.2.1",
+    "@commitlint/cli": "^16.2.i1",
     "@commitlint/config-conventional": "^16.2.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",

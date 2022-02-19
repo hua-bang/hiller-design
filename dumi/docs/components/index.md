@@ -3,32 +3,25 @@ nav:
   title: 概述
   path: /base
 group:
-  title: 概述
+  title: 组件
   order: 1
 ---
 
-# Hiller-Design
+# Alert
 
-`Hiller-Design` 是一个轻便的 `React UI` 组件库，主要用于研发企业级中后台产品。
+> A personal React UI Toolkit.
 
-## Component Demo
-
+## Demo
 ```tsx
 import React from 'react';
 import { Alert } from 'hiller-design';
 import 'hiller-design/dist/index.css';
 
-const App = () => {
+export default () => {
   return (
-    <>
-      <Alert>Hiller Design</Alert>
-      <br />
-      <Alert kind="warning">
-        Hiller Design
-      </Alert>
-    </>
+    <div>
+      <Alert />
+    </div>
   );
 }
-
-export default App;
 ```

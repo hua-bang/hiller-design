@@ -14,8 +14,10 @@ group:
 ## Demo
 ```tsx
 import React from 'react';
-import { Alert } from 'hiller-design';
+import { Alert, Button } from 'hiller-design';
 import 'hiller-design/dist/index.css';
+
+console.log(Button);
 
 export default () => {
   return (

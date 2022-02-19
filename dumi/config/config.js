@@ -1,4 +1,21 @@
 import { defineConfig } from 'dumi';
+import path from 'path';
+
+const isProductEnv = (process) => {
+  return process.env.NODE_ENV === 'production';
+};
+
+const BASE_ALIAS = {
+  '@style': '/SRC/style',
+  '@components': '/src/components',
+};
+
+const DEVELOPMENT_ALIAS = {
+  'hiller-design/dist/index.css': path.resolve(__dirname, '../../src/style/index.scss'),
+  'hiller-design': path.resolve(__dirname, '../../src/'),
+};
+
+const aliasConfig = Object.assign({}, BASE_ALIAS, isProductEnv(process) ? {} : DEVELOPMENT_ALIAS ); 
 
 const repo = 'hiller-design';
 
@@ -26,9 +43,6 @@ export default defineConfig({
     memo.plugins.delete('copy');
   },
   sass: {},
-  alias: {
-    '@style': '/SRC/style',
-    '@components': '/src/components',
-  },
+  alias: aliasConfig
   // more config: https://d.umijs.org/config
 });

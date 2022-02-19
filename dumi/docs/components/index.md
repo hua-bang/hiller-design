@@ -23,7 +23,7 @@ const App = () => {
     <>
       <Alert>Hiller Design</Alert>
       <br />
-      <Alert kind="warning" style={{ color: "red" }}>
+      <Alert kind="warning">
         Hiller Design
       </Alert>
     </>

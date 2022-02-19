@@ -11,6 +11,7 @@
 # production
 /build
 /dist
+/dumi/docs-dist
 
 # misc
 .DS_Store

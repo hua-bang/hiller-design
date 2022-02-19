@@ -1,6 +1,6 @@
 import { defineConfig } from 'dumi';
 
-const repo = 'Hiller-Design';
+const repo = 'hiller-design';
 
 export default defineConfig({
   title: repo,

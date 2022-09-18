@@ -1,3 +1,5 @@
+import './style/index';
+
 import Alert from './alert';
 
 export default Alert;

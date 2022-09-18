@@ -1,3 +1,4 @@
+import './style/index';
 
 import Button from './button';
 

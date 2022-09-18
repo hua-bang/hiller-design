@@ -11,8 +11,8 @@ const BASE_ALIAS = {
 };
 
 const DEVELOPMENT_ALIAS = {
-  'hiller-design/dist/index.css': path.resolve(__dirname, '../../src/style/index.scss'),
-  'hiller-design': path.resolve(__dirname, '../../src/'),
+  'hiller-design/dist/index.css': path.resolve(__dirname, '../../dist/style/index.css'),
+  'hiller-design': path.resolve(__dirname, '../../dist/index.esm.js'),
 };
 
 const aliasConfig = Object.assign({}, BASE_ALIAS, isProductEnv(process) ? {} : DEVELOPMENT_ALIAS ); 

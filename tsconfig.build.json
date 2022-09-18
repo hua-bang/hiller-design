@@ -7,6 +7,7 @@
     "jsx": "react",
     "moduleResolution":"Node",// 规定寻找引入文件的路径为 node 标准
     "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
   },
   "include": [// 要编译哪些文件
     "src"
@@ -14,6 +15,7 @@
   "exclude": [// 排除不需要编译的文件
     "node_modules",
     "**/node_modules",
+    "**/node_modules/**",
     "src/**/*.test.tsx",
     "src/**/*.stories.tsx",
     "src/setupTests.ts",

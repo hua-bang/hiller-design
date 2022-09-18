@@ -11,4 +11,6 @@ export interface AlertProps {
   kind?: keyof Kind;
 
   style?: CSSProperties;
+
+  test?: any;
 }

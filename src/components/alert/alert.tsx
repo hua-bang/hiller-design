@@ -1,7 +1,6 @@
 import React from 'react';
 import { AlertProps, KindMap, Kind } from './interface';
 
-
 const prefixCls = 'hiller-alert';
 const defaultKind: Kind = 'info';
 const defaultText = 'alert';

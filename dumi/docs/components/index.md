@@ -17,12 +17,21 @@ import React from 'react';
 import { Alert, Button } from 'hiller-design';
 import 'hiller-design/dist/index.css';
 
-console.log(Button);
-
 export default () => {
   return (
     <div>
-      <Alert />
+      <Alert kind="positive"/>
+      <div style={{ marginTop: '10px' }}>
+        <Alert />
+      </div>
+      <div style={{ marginTop: '10px' }}>
+        <Alert kind="negative">
+          This is negative
+        </Alert>
+      </div>
+      <div style={{ marginTop: '10px' }}>
+        <Alert kind="warning" />
+      </div>
     </div>
   );
 }

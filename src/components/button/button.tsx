@@ -1,11 +1,39 @@
 import React from 'react';
+import { ButtonProps, ButtonType } from './interface';
+import classNames from 'classnames';
 
-console.log('button');
+const prefixCls = 'hiller-button';
+const disabledCls = `${prefixCls}-disabled`;
 
 
-const Button = () => {
+const defaultType: ButtonType = 'default';
+
+const TypeClsMap: Record<ButtonType, string> = {
+  default: '',
+  primary: `${prefixCls}-primary`
+};
+
+const Button: React.FC<ButtonProps> = ({
+  type = defaultType,
+  block = false,
+  onClick,
+  children,
+  style = {},
+  disabled = false
+}) => {
+
+  const cls = classNames(prefixCls, TypeClsMap[type], disabled ? disabledCls : '');
+
+  const handleClick: React.MouseEventHandler<HTMLElement> = (e) => {
+    onClick && onClick(e);
+  };
+
+  const display = block ? 'block' : 'inline';
+
   return (
-    <button>123334422323</button>
+    <div className={cls} onClick={handleClick} style={{ display, ...style }}>
+      {children}
+    </div>
   );
 };
 

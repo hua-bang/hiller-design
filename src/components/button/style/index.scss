@@ -1,6 +1,37 @@
 .hiller-button {
-  padding: 20px;
-  background: white;
+  padding: 4px 15px;
+  background: #fff;
   border-radius: 3px;
+  color: #000000d9;
+  border-color: #d9d9d9;
+  border-radius: 2px;
+  line-height: 1.5715;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 2px #00000004;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  font-weight: 400px;
+  user-select: none;
+  touch-action: manipulation;
+
+  &:hover {
+    color: #40a9ff;
+    border-color: #40a9ff;
+  }
+
+  &-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.hiller-button-primary {
+  background: #1890ff;
   color: white;
+
+  &:hover {
+    background: #40a9ff;
+    color: white;
+  }
 }

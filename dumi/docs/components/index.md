@@ -3,36 +3,54 @@ nav:
   title: 概述
   path: /base
 group:
-  title: 组件
+  title: 概述
   order: 1
 ---
 
-# Alert
+# 概述
 
 > A personal React UI Toolkit.
 
-## Demo
-```tsx
-import React from 'react';
-import { Alert, Button } from 'hiller-design';
-import 'hiller-design/dist/index.css';
+## ✨ 预期定位
+- 📦 开箱即用的高质量 `React` 组件。
+- 🛡 使用 `TypeScript` 开发，提供完整的类型定义文件。
+- ⚙️ 支持组件样式按需引入。
 
-export default () => {
+## 📦 安装
+```shell
+npm install hiller-design --save
+```
+```shell
+yarn add hiller-design
+```
+
+## 🔨 示例
+```ts
+import { Alert } from 'hiller-design';
+
+const App = () => {
   return (
-    <div>
-      <Alert kind="positive"/>
-      <div style={{ marginTop: '10px' }}>
-        <Alert />
-      </div>
-      <div style={{ marginTop: '10px' }}>
-        <Alert kind="negative">
-          This is negative
-        </Alert>
-      </div>
-      <div style={{ marginTop: '10px' }}>
-        <Alert kind="warning" />
-      </div>
-    </div>
+    <Alert />
   );
 }
+
+export default App;
+```
+引入样式
+```ts
+import 'hiller-design/dist/index.css';
+```
+
+## ✨ 组件
+
+- [x] Alert 
+- [ ] Button
+
+## ⌨️ 本地开发
+```shell
+git clone https://github.com/hua-bang/hiller-design.git
+
+cd hiller-design
+
+npm install
 ```
